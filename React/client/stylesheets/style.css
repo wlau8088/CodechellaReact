@@ -1,0 +1,10 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background: #d8d797;
+}
+
+div{
+    font-size: large;
+}

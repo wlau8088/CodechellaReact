@@ -1,0 +1,48 @@
+{
+  "name": "ReactCochella",
+  "version": "1.0.0",
+  "description": "Teaching about React",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node React/server/server.js",
+    "build": "cross-env NODE_ENV=production React/webpack",
+    "dev": "cross-env NODE_ENV=development concurrently \"webpack serve --open Chrome.exe\" \"node server/server.js\"",
+    "react": "cross-env NODE_ENV=development concurrently \"webpack serve --config webpack.config.js --open Chrome.exe\" \"node server/server.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wlau8088/Renter-Ratings/issues"
+  },
+  "homepage": "https://github.com/wlau8088/Renter-Ratings#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "pg": "^8.5.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "webpack-serve": "^3.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-loader": "^8.2.1",
+    "concurrently": "^5.3.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^5.0.1",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.5.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
